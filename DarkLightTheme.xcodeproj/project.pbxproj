@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		BA30888226A8786000C6FF2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30888126A8786000C6FF2E /* AppDelegate.swift */; };
 		BA30888426A8786000C6FF2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30888326A8786000C6FF2E /* SceneDelegate.swift */; };
-		BA30888626A8786000C6FF2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30888526A8786000C6FF2E /* ViewController.swift */; };
 		BA30888926A8786000C6FF2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA30888726A8786000C6FF2E /* Main.storyboard */; };
 		BA30888B26A8786400C6FF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA30888A26A8786400C6FF2E /* Assets.xcassets */; };
 		BA30888E26A8786400C6FF2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA30888C26A8786400C6FF2E /* LaunchScreen.storyboard */; };
+		BA30889626A87BFC00C6FF2E /* ThemeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30889526A87BFC00C6FF2E /* ThemeViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA30887E26A8786000C6FF2E /* DarkLightTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLightTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA30888126A8786000C6FF2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA30888326A8786000C6FF2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA30888526A8786000C6FF2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA30888826A8786000C6FF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA30888A26A8786400C6FF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA30888D26A8786400C6FF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA30888F26A8786400C6FF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA30889526A87BFC00C6FF2E /* ThemeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		BA30888026A8786000C6FF2E /* DarkLightTheme */ = {
 			isa = PBXGroup;
 			children = (
-				BA30888126A8786000C6FF2E /* AppDelegate.swift */,
-				BA30888326A8786000C6FF2E /* SceneDelegate.swift */,
-				BA30888526A8786000C6FF2E /* ViewController.swift */,
-				BA30888726A8786000C6FF2E /* Main.storyboard */,
+				BA30889726A87D8900C6FF2E /* AppDelegate */,
+				BA30889826A87DAD00C6FF2E /* Controller */,
+				BA30889926A87DB700C6FF2E /* View */,
 				BA30888A26A8786400C6FF2E /* Assets.xcassets */,
-				BA30888C26A8786400C6FF2E /* LaunchScreen.storyboard */,
 				BA30888F26A8786400C6FF2E /* Info.plist */,
 			);
 			path = DarkLightTheme;
+			sourceTree = "<group>";
+		};
+		BA30889726A87D8900C6FF2E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BA30888126A8786000C6FF2E /* AppDelegate.swift */,
+				BA30888326A8786000C6FF2E /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BA30889826A87DAD00C6FF2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA30889526A87BFC00C6FF2E /* ThemeViewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA30889926A87DB700C6FF2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA30888726A8786000C6FF2E /* Main.storyboard */,
+				BA30888C26A8786400C6FF2E /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA30888626A8786000C6FF2E /* ViewController.swift in Sources */,
+				BA30889626A87BFC00C6FF2E /* ThemeViewViewController.swift in Sources */,
 				BA30888226A8786000C6FF2E /* AppDelegate.swift in Sources */,
 				BA30888426A8786000C6FF2E /* SceneDelegate.swift in Sources */,
 			);
