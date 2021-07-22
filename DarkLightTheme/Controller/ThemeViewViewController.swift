@@ -9,8 +9,8 @@ import UIKit
 
 class ThemeViewViewController: UIViewController {
 
-    @IBOutlet weak var darkButton: UIButton!
-    var isOn =false
+    @IBOutlet weak var darkButtonOutlet: UIButton!
+    var isOn = false
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ThemeViewViewController")
@@ -26,8 +26,10 @@ class ThemeViewViewController: UIViewController {
             
         }else{
             print("Dark Theme off")
-            self.isOn = true
-            self.darkButtonOutlet.
+            self.isOn = true; self.darkButtonOutlet.setTitle("Dark Theme off", for: .normal)
+            self.darkButtonOutlet.setTitleColor(UIColor.black, for: .normal)
+            self.view.backgroundColor = .white
+            
         }
     }
     
